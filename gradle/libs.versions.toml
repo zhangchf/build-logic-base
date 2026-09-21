@@ -58,3 +58,11 @@ ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 room = { id = "androidx.room", version.ref = "room" }
 jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 android-library = { id = "com.android.library", version.ref = "agp" }
+
+# Convention plugins defined in build-logic
+demo-android-application = { id = "demo.android.application" }
+demo-android-library = { id = "demo.android.library" }
+demo-android-compose = { id = "demo.android.compose" }
+demo-android-hilt = { id = "demo.android.hilt" }
+demo-android-room = { id = "demo.android.room" }
+demo-jvm-library = { id = "demo.jvm.library" }

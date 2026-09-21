@@ -1,6 +1,6 @@
 plugins {
-    id("demo.android.application")
-    id("demo.android.compose")
+    alias(libs.plugins.demo.android.application)
+    alias(libs.plugins.demo.android.compose)
 }
 
 android {
