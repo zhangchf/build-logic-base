@@ -1,13 +1,13 @@
 plugins {
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.compose)
+    id("demo.android.application")
+    id("demo.android.application.compose")
 }
 
 android {
     namespace = "com.zcf.buildlogicbase"
 
     defaultConfig {
-        applicationId = "com.zcf.buildlogicbase"
+        applicationId = "com.zcf.buildLogicbase"
         versionCode = 1
         versionName = "1.0"
 
@@ -20,13 +20,6 @@ android {
                 enable = false
             }
         }
-    }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
-    }
-    buildFeatures {
-        compose = true
     }
 }
 
