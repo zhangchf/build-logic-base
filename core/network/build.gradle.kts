@@ -1,5 +1,5 @@
 plugins {
-    alias(libs.plugins.demo.jvm.library)
+    alias(libs.plugins.common.jvm.library)
 }
 
 dependencies {

@@ -60,9 +60,9 @@ jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin"
 android-library = { id = "com.android.library", version.ref = "agp" }
 
 # Convention plugins defined in build-logic
-demo-android-application = { id = "demo.android.application" }
-demo-android-library = { id = "demo.android.library" }
-demo-android-compose = { id = "demo.android.compose" }
-demo-android-hilt = { id = "demo.android.hilt" }
-demo-android-room = { id = "demo.android.room" }
-demo-jvm-library = { id = "demo.jvm.library" }
+common-android-application = { id = "common.android.application" }
+common-android-library = { id = "common.android.library" }
+common-android-compose = { id = "common.android.compose" }
+common-android-hilt = { id = "common.android.hilt" }
+common-android-room = { id = "common.android.room" }
+common-jvm-library = { id = "common.jvm.library" }
