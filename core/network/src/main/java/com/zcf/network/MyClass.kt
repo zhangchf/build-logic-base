@@ -1,4 +1,3 @@
 package com.zcf.network
 
-class MyClass {
-}
+class MyClass
