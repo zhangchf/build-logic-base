@@ -1,0 +1,33 @@
+// Compose Stability Configuration
+// Classes listed here will be treated as stable by the Compose Compiler.
+
+// Kotlin Collections
+kotlin.collections.List
+kotlin.collections.Set
+kotlin.collections.Map
+
+// Java Standard Library types
+java.time.Instant
+java.time.LocalDate
+java.time.LocalDateTime
+java.time.LocalTime
+java.time.ZonedDateTime
+java.time.ZoneId
+java.time.Duration
+java.time.Period
+java.time.OffsetDateTime
+java.time.OffsetTime
+java.util.Currency
+java.util.Locale
+java.util.UUID
+
+// Kotlin standard library time
+kotlin.time.Instant
+
+// Kotlinx Datetime
+kotlinx.datetime.LocalDate
+kotlinx.datetime.LocalDateTime
+kotlinx.datetime.LocalTime
+kotlinx.datetime.TimeZone
+kotlinx.datetime.DatePeriod
+kotlinx.datetime.DateTimePeriod

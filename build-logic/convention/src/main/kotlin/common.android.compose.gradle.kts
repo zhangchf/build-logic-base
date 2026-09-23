@@ -5,6 +5,12 @@ plugins {
     id("org.jetbrains.kotlin.plugin.compose")
 }
 
+composeCompiler {
+    stabilityConfigurationFiles.add(
+        rootProject.layout.projectDirectory.file("compose_stability_config.txt")
+    )
+}
+
 // Apply after common.android.application / common.android.library.
 extensions.configure<CommonExtension> {
     buildFeatures.compose = true
