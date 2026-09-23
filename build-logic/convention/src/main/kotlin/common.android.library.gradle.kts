@@ -3,6 +3,7 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
     id("com.android.library")
+    id("common.detekt")
 }
 
 // Single source of truth for the JDK version: gradle/libs.versions.toml
