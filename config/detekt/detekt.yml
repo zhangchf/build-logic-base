@@ -1,21 +1,21 @@
-build:
-  maxIssues: 0
-  excludeCorrectable: false
-
 complexity:
   TooManyFunctions:
     active: false
   LargeClass:
     active: false
   LongMethod:
-    threshold: 80
+    allowedLines: 80
 
 style:
   MagicNumber:
     active: false
-  UnusedPrivateMember:
+  UnusedImport:
     active: true
-  UnusedImports:
+  UnusedPrivateClass:
+    active: true
+  UnusedPrivateFunction:
+    active: true
+  UnusedPrivateProperty:
     active: true
   WildcardImport:
     active: true
