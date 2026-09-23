@@ -8,9 +8,10 @@ plugins {
     alias(libs.plugins.detekt)
 }
 
-// Run "./gradlew UpdateDaemonJvm" once to generate gradle-daemon-jvm.properties
+// Keeps gradle/gradle-daemon-jvm.properties in sync with the `java` version in
+// gradle/libs.versions.toml. After bumping it, run "./gradlew updateDaemonJvm" and commit the file.
 tasks.withType<org.gradle.buildconfiguration.tasks.UpdateDaemonJvm> {
-    languageVersion.set(JavaLanguageVersion.of(21))
+    languageVersion.set(JavaLanguageVersion.of(libs.versions.java.get().toInt()))
 }
 
 spotless {

@@ -6,7 +6,8 @@ group = "com.zcf.buildlogic"
 
 java {
     toolchain {
-        languageVersion.set(JavaLanguageVersion.of(21))
+        // Single source of truth for the JDK version: gradle/libs.versions.toml
+        languageVersion.set(JavaLanguageVersion.of(libs.versions.java.get().toInt()))
     }
 }
 

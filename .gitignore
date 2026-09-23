@@ -1,4 +1,6 @@
 *.iml
+# IntelliJ "bin" output directory
+bin/
 .gradle
 /local.properties
 /.idea/caches
