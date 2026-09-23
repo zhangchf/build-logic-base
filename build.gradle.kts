@@ -16,12 +16,12 @@ tasks.withType<org.gradle.buildconfiguration.tasks.UpdateDaemonJvm> {
 spotless {
     kotlin {
         target("**/*.kt")
-        targetExclude("**/build/**/*.kt")
+        targetExclude("**/build/**/*.kt", "**/bin/**/*.kt", "**/.gradle/**/*.kt")
         ktlint()
     }
     kotlinGradle {
         target("**/*.gradle.kts")
-        targetExclude("**/build/**/*.gradle.kts")
+        targetExclude("**/build/**/*.gradle.kts", "**/bin/**/*.gradle.kts", "**/.gradle/**/*.gradle.kts")
         ktlint()
     }
 }
