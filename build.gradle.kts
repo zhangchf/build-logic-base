@@ -8,15 +8,20 @@ plugins {
     alias(libs.plugins.detekt)
 }
 
+// Run "./gradlew UpdateDaemonJvm" once to generate gradle-daemon-jvm.properties
+tasks.withType<org.gradle.buildconfiguration.tasks.UpdateDaemonJvm> {
+    languageVersion.set(JavaLanguageVersion.of(21))
+}
+
 spotless {
     kotlin {
         target("**/*.kt")
-        targetExclude("**/build/**/*.kt")
+        targetExclude("**/build/**/*.kt", "**/bin/**/*.kt", "**/.gradle/**/*.kt")
         ktlint()
     }
     kotlinGradle {
         target("**/*.gradle.kts")
-        targetExclude("**/build/**/*.gradle.kts")
+        targetExclude("**/build/**/*.gradle.kts", "**/bin/**/*.gradle.kts", "**/.gradle/**/*.gradle.kts")
         ktlint()
     }
 }
