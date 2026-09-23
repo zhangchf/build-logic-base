@@ -71,6 +71,8 @@ detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
 common-android-application = { id = "common.android.application" }
 common-android-library = { id = "common.android.library" }
 common-android-compose = { id = "common.android.compose" }
+common-android-compose-test = { id = "common.android.compose.test" }
+common-android-test = { id = "common.android.test" }
 common-android-hilt = { id = "common.android.hilt" }
 common-android-room = { id = "common.android.room" }
 common-jvm-library = { id = "common.jvm.library" }

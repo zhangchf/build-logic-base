@@ -5,6 +5,7 @@ plugins {
     id("org.jetbrains.kotlin.plugin.compose")
 }
 
+// Apply after common.android.application / common.android.library.
 extensions.configure<CommonExtension> {
     buildFeatures.compose = true
 }
