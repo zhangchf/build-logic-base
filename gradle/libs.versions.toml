@@ -11,7 +11,7 @@ activityCompose = "1.8.0"
 kotlin = "2.4.20"
 composeBom = "2026.02.01"
 hilt = "2.60.1"
-ksp = "2.1.0-1.0.29"
+ksp = "2.3.12"
 room = "2.8.5"
 appcompat = "1.8.0"
 material = "1.14.0"
@@ -53,6 +53,7 @@ compose-compiler-gradlePlugin = { group = "org.jetbrains.kotlin", name = "compos
 hilt-gradlePlugin = { group = "com.google.dagger", name = "hilt-android-gradle-plugin", version.ref = "hilt" }
 ksp-gradlePlugin = { group = "com.google.devtools.ksp", name = "com.google.devtools.ksp.gradle.plugin", version.ref = "ksp" }
 room-gradlePlugin = { group = "androidx.room", name = "room-gradle-plugin", version.ref = "room" }
+detekt-gradlePlugin = { group = "dev.detekt", name = "detekt-gradle-plugin", version.ref = "detekt" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 
@@ -73,6 +74,7 @@ common-android-library = { id = "common.android.library" }
 common-android-compose = { id = "common.android.compose" }
 common-android-compose-test = { id = "common.android.compose.test" }
 common-android-test = { id = "common.android.test" }
+common-detekt = { id = "common.detekt" }
 common-android-hilt = { id = "common.android.hilt" }
 common-android-room = { id = "common.android.room" }
 common-jvm-library = { id = "common.jvm.library" }
