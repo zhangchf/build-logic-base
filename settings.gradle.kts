@@ -27,4 +27,5 @@ dependencyResolutionManagement {
 rootProject.name = "build-logic-base"
 include(":app")
 include(":core:network")
+include(":features:chat")
 include(":features:profile")

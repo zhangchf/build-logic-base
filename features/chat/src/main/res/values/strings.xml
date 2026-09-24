@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="chat_title">DeepSeek Chat</string>
+    <string name="chat_model_flash">Flash</string>
+    <string name="chat_model_pro">V4 Pro</string>
+    <string name="chat_thinking_label">Thinking</string>
+    <string name="chat_input_hint">Message DeepSeek…</string>
+    <string name="chat_send">Send</string>
+    <string name="chat_stop">Stop</string>
+    <string name="chat_pending">…</string>
+    <string name="chat_reasoning">Reasoning</string>
+    <string name="chat_reasoning_streaming">Thinking…</string>
+    <string name="chat_tokens">%1$d in · %2$d out</string>
+    <string name="chat_missing_api_key">No DeepSeek API key. Add DEEPSEEK_API_KEY=… to local.properties and rebuild.</string>
+    <string name="chat_error_http">Request failed (HTTP %1$d): %2$s</string>
+    <string name="chat_error_transport">Network error: %1$s</string>
+    <string name="chat_error_empty_response">The server returned an empty response.</string>
+    <string name="chat_error_malformed">The server sent a response that could not be read.</string>
+    <string name="chat_error_missing_key">No API key configured.</string>
+</resources>
